@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Transparent-white-paragraphs);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 900px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.container h1 {
+    color: var(--Very-light-gray-background-headings-buttons);
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.container p {
+    color: var(--Transparent-white-paragraphs);
+    font-weight: 400;
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.container button {
+    background-color: var(--Very-light-gray-background-headings-buttons);
+    border: 1px solid var(--Very-light-gray-background-headings-buttons);
+    border-radius: 50px;
+    outline: none;
+    padding: 1rem 2rem;
+    font-family: 'Lexend Deca', sans-serif;
+    transition: .3s;
+}
+
+.container button:hover {
+    cursor: pointer;
+    color: var(--Very-light-gray-background-headings-buttons);
+    background-color: transparent;
+}
+
+.sedans, .suvs, .luxury {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+    padding: 3rem;
+}
+
+.sedans {
+    background-color: var(--Bright-orange);
+}
+
+.sedans button {
+    color: var(--Bright-orange);
+}
+
+.suvs {
+    background-color: var(--Dark-cyan);
+}
+
+.suvs button {
+    color: var(--Dark-cyan);
+}
+
+.luxury {
+    background-color: var(--Very-dark-cyan);
+}
+
+.luxury button {
+    color: var(--Very-dark-cyan);
+}
+
+.attribution {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: var(--Bright-orange);
+    text-decoration: none;
+}
+
+@media (max-width: 660px) {
+    body {
+        padding: 2rem;
+    }
+
+    main {
+        margin-top: 0;
+    }
+
+    .container {
+        height: 100%;
+        flex-direction: column;
+    }
+
+    img, h1 {
+        margin-bottom: 2rem;
+    }
+}
