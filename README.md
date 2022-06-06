@@ -1,4 +1,4 @@
-Preview Site: https://helioj-3-column.netlify.app/
+Preview Site: [https://helioj-3-column.netlify.app/](https://helioj-three-column.netlify.app/)
 
 # Frontend Mentor - 3-column preview card component
 
